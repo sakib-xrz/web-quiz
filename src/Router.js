@@ -1,6 +1,7 @@
 import Blog from "./components/Blog";
 import ErrorPage from "./components/ErrorPage";
 import Home from "./components/Home";
+import Statistics from "./components/Statistics";
 import Main from "./Main";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home></Home> },
       { path: "/home", element: <Home></Home> },
+      { path: "/statistics", element: <Statistics></Statistics>},
       { path: "/blog", element: <Blog></Blog>}
     ],
   },
