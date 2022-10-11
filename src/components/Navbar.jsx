@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import "../css/Navbar.css"
 
 const Navbar = () => {
     return (
@@ -114,12 +115,11 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <a
-              href="#all-topic"
-              className="px-3 mr-4 py-2 text-lg font-semibold rounded text-base-100 bg-primary"
+            <Link
+              className="px-3 mr-4 py-2 text-lg font-semibold rounded text-base-100 bg-primary text-button"
             >
               Test YourSelf
-            </a>
+            </Link>
           </div>
         </div>
       </div>

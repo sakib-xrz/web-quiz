@@ -3,11 +3,25 @@ import React from 'react';
 const Blog = () => {
     return (
       <div>
-        <section className="text-gray-800 bg-gray-100 py-20">
+        <section className="text-neutral bg-gray-100">
+          {/* ------------------------------- */}
+          <div className="bg-gray-100">
+            <div className="container lg:w-8/12 md:w-9/12 w-11/12 px-4 pt-16 pb-8 mx-auto text-center lg:pb-2 md:py-32 md:px-10 lg:px-32 text-gray-900">
+              <h1 className="text-5xl font-bold leading-none sm:text-6xl text-neutral">
+                Welcome To Blog
+              </h1>
+              <p className="pt-6 pb-4 text-lg mx-auto sm:mb-12 xl:max-w-3xl text-neutral">
+                Web development is a huge part of our society. If you want to be
+                well-known throughout the world then you should probably develop
+                your own website or a web page. We will test your knowledge on
+                this matter. Can you face all these questions?
+              </p>
+            </div>
+          </div>
           {/* ------------------------------- */}
           <div
             tabIndex={0}
-            className="collapse collapse-arrow border border-base-300 bg-base-100 w-8/12 mx-auto rounded-box my-5"
+            className="collapse collapse-arrow border border-base-300 bg-base-100 lg:w-8/12 w-11/12 mx-auto rounded-box my-5"
           >
             <div className="collapse-title text-xl font-medium">
               What is the purpose of react router?
@@ -26,7 +40,7 @@ const Blog = () => {
           {/* ------------------------------- */}
           <div
             tabIndex={0}
-            className="collapse collapse-arrow border border-base-300 bg-base-100 w-8/12 mx-auto rounded-box my-5"
+            className="collapse collapse-arrow border border-base-300 bg-base-100 lg:w-8/12 w-11/12 mx-auto rounded-box my-5"
           >
             <div className="collapse-title text-xl font-medium">
               How does Context API works?
@@ -51,7 +65,7 @@ const Blog = () => {
           {/* ------------------------------- */}
           <div
             tabIndex={0}
-            className="collapse collapse-arrow border border-base-300 bg-base-100 w-8/12 mx-auto rounded-box my-5"
+            className="collapse collapse-arrow border border-base-300 bg-base-100 lg:w-8/12 w-11/12 mx-auto rounded-box mt-5 mb-28"
           >
             <div className="collapse-title text-xl font-medium">
               What is useRef hook in react?
