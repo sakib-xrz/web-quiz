@@ -19,7 +19,7 @@ const Statistics = () => {
       <h1 className="text-3xl font-bold leading-none text-neutral mx-3 mt-8">
         Quiz Question Analytics
       </h1>
-      <ResponsiveContainer className="bar-chart" width="80%" height={400}>
+      <ResponsiveContainer className="bar-chart" width="50%" height={400}>
         <BarChart
           data={topics}
           margin={{
