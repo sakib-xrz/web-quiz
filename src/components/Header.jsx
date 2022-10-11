@@ -20,7 +20,7 @@ const Header = () => {
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <a 
                 href="#all-topic"
-                className="px-8 py-3 text-lg font-semibold rounded text-base-100 bg-primary"
+                className="px-8 py-3 text-lg font-semibold rounded text-base-100 bg-accent hover:bg-primary"
               >
                 Test Yourself
               </a>

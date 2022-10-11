@@ -116,7 +116,7 @@ const Navbar = () => {
           </div>
           <div className="navbar-end">
             <Link
-              className="px-3 mr-4 py-2 text-lg font-semibold rounded text-base-100 bg-primary text-button"
+              className="px-3 mr-4 py-2 text-lg font-semibold rounded text-base-100 bg-accent text-button hover:bg-primary"
             >
               Test YourSelf
             </Link>

@@ -15,7 +15,7 @@ const TopicCard = ({ topic }) => {
               <p className="text-left">Total Quiz: {total}</p>
             </div>
             <div className="card-actions w-6/12 flex items-end justify-end">
-              <button className="badge p-3 badge-primary">Start Quiz</button>
+              <button className="badge p-3 badge-accent hover:badge-primary">Start Quiz</button>
             </div>
           </div>
         </div>
