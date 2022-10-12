@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { FaEye } from "react-icons/fa";
 import "../css/QuizTemplate.css";
+import Modal from "./Modal";
 
 const QuizTemplate = ({ allQuestion, index }) => {
+  const [modalData, setModalData] = useState({});
   const { question, options, correctAnswer } = allQuestion;
-  const [correctAns, setCorrectAns] = useState();
-  console.log(correctAns);
   const handleCorrectAnswer = (e) => {
     if (correctAnswer === e.target.value) {
       toast.success("Right Answer", { autoClose: 1000 });
@@ -24,16 +24,14 @@ const QuizTemplate = ({ allQuestion, index }) => {
                 <label
                   htmlFor="my-modal-3"
                   className="modal-button cursor-pointer"
-                  onClick={() => setCorrectAns(correctAnswer)}
+                  onClick={() => setModalData(allQuestion)}
                 >
                   <FaEye></FaEye>
                 </label>
               </div>
-
-              {/* -------- */}
               <div className="question">
                 <h4 className="pb-4 font-bold">Question {index + 1}</h4>
-                <h3 className="font-semibold">{question.slice(3,-4)}</h3>
+                <h3 className="font-semibold">{question.slice(3, -4)}</h3>
               </div>
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-5 mt-6">
@@ -56,20 +54,9 @@ const QuizTemplate = ({ allQuestion, index }) => {
           </div>
         </div>
       </div>
-      <input type="checkbox" id="my-modal-3" className="modal-toggle" />
-      <div className="modal">
-        <div className="modal-box rounded-md relative">
-          <label
-            onClick={() => setCorrectAns(null)}
-            htmlFor="my-modal-3"
-            className="btn btn-sm btn-circle absolute right-2 top-2"
-          >
-            ✕
-          </label>
-          <h3 className="text-lg font-bold">Correct Answer</h3>
-          <p className="py-4">{correctAns}</p>
-        </div>
-      </div>
+      {modalData && (
+        <Modal data={modalData} setModalData={setModalData}></Modal>
+      )}
     </>
   );
 };
