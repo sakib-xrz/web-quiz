@@ -11,8 +11,9 @@ const Quiz = () => {
       <h1 className="text-4xl font-bold leading-none text-neutral mt-8">
         Quiz of {name}
       </h1>
-      {questions.map((allQuestion) => (
+      {questions.map((allQuestion, index) => (
         <QuizTemplate
+          index={index}
           key={allQuestion.id}
           allQuestion={allQuestion}
         ></QuizTemplate>
