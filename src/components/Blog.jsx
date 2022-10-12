@@ -21,7 +21,7 @@ const Blog = () => {
           {/* ------------------------------- */}
           <div
             tabIndex={0}
-            className="collapse collapse-arrow border border-base-300 bg-base-100 lg:w-8/12 w-11/12 mx-auto rounded-box my-5"
+            className="collapse collapse-arrow border border-base-300 bg-base-100 lg:w-8/12 w-11/12 mx-auto rounded-md my-5"
           >
             <div className="collapse-title text-xl font-medium">
               What is the purpose of react router?
@@ -40,7 +40,7 @@ const Blog = () => {
           {/* ------------------------------- */}
           <div
             tabIndex={0}
-            className="collapse collapse-arrow border border-base-300 bg-base-100 lg:w-8/12 w-11/12 mx-auto rounded-box my-5"
+            className="collapse collapse-arrow border border-base-300 bg-base-100 lg:w-8/12 w-11/12 mx-auto rounded-md my-5"
           >
             <div className="collapse-title text-xl font-medium">
               How does Context API works?
@@ -65,7 +65,7 @@ const Blog = () => {
           {/* ------------------------------- */}
           <div
             tabIndex={0}
-            className="collapse collapse-arrow border border-base-300 bg-base-100 lg:w-8/12 w-11/12 mx-auto rounded-box mt-5 mb-28"
+            className="collapse collapse-arrow border border-base-300 bg-base-100 lg:w-8/12 w-11/12 mx-auto rounded-md mt-5 mb-28"
           >
             <div className="collapse-title text-xl font-medium">
               What is useRef hook in react?

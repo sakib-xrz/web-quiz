@@ -7,6 +7,7 @@ import Modal from "./Modal";
 const QuizTemplate = ({ allQuestion, index }) => {
   const [modalData, setModalData] = useState({});
   const { question, options, correctAnswer } = allQuestion;
+
   const handleCorrectAnswer = (e) => {
     if (correctAnswer === e.target.value) {
       toast.success("Right Answer", { autoClose: 1000 });
@@ -14,6 +15,10 @@ const QuizTemplate = ({ allQuestion, index }) => {
       toast.error("Wrong Answer", { autoClose: 1000 });
     }
   };
+
+  // const markSelectAnswer = (e) =>{
+
+  // }
   return (
     <>
       <div className="lg:w-8/12 md:w-10/12 w-11/12 mx-auto my-8">
