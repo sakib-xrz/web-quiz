@@ -1,12 +1,12 @@
-## Project Name 
+## Website Name 
 
 WebQuiz
 
+A quiz website, built with React, React Router, JavaScript, and Tailwind.
+
 ## To Visit This Website 
 
-`localhost:3000/ideas`  
-
-A quiz website, built with React, React Router, JavaScript, and Tailwind.
+(`https://web-quiz-online.netlify.app/`) 
 
 ## Installation and Setup Instructions
 

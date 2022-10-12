@@ -25,7 +25,7 @@ const QuizTemplate = ({ allQuestion, index }) => {
               <div className="flex justify-end mr-5 text-2xl">
                 <label
                   htmlFor="my-modal-3"
-                  className="modal-button cursor-pointer btn-disabled bg-transparent"
+                  className="modal-button cursor-pointer"
                   onClick={() => setModalData(allQuestion)}
                 >
                   <FaEye></FaEye>
