@@ -1,11 +1,8 @@
-import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { FaEye } from "react-icons/fa";
 import "../css/QuizTemplate.css";
-import Modal from "./Modal";
 
 const QuizTemplate = ({ allQuestion, index }) => {
-  const [modalData, setModalData] = useState({});
   const { question, options, correctAnswer } = allQuestion;
 
   const handleCorrectAnswer = (e) => {
@@ -14,6 +11,10 @@ const QuizTemplate = ({ allQuestion, index }) => {
     } else {
       toast.error("Wrong Answer", { autoClose: 1000 });
     }
+  };
+
+  const handleEyeButton = (correctAnswer) => {
+    toast(correctAnswer);
   };
 
   return (
@@ -26,7 +27,7 @@ const QuizTemplate = ({ allQuestion, index }) => {
                 <label
                   htmlFor="my-modal-3"
                   className="modal-button cursor-pointer"
-                  onClick={() => setModalData(allQuestion)}
+                  onClick={() => handleEyeButton(correctAnswer)}
                 >
                   <FaEye></FaEye>
                 </label>
@@ -56,9 +57,6 @@ const QuizTemplate = ({ allQuestion, index }) => {
           </div>
         </div>
       </div>
-      {modalData && (
-        <Modal data={modalData} setModalData={setModalData}></Modal>
-      )}
     </>
   );
 };
