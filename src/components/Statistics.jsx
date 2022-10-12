@@ -16,7 +16,7 @@ const Statistics = () => {
   const topics = useContext(TopicsContext);
   return (
     <div className="w-12/9 container mx-auto">
-      <h1 className="text-3xl font-bold leading-none text-neutral mx-3 mt-8">
+      <h1 className="text-3xl font-bold leading-none text-neutral mx-3 pt-8">
         Quiz Question Analytics
       </h1>
       <ResponsiveContainer className="bar-chart" width="50%" height={400}>

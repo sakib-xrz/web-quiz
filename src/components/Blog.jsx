@@ -6,11 +6,11 @@ const Blog = () => {
         <section className="text-neutral bg-gray-100">
           {/* ------------------------------- */}
           <div className="bg-gray-100">
-            <div className="container lg:w-8/12 md:w-9/12 w-11/12 px-4 pt-16 pb-8 mx-auto text-center lg:pb-2 md:py-32 md:px-10 lg:px-32 text-gray-900">
-              <h1 className="text-5xl font-bold leading-none sm:text-6xl text-neutral">
+            <div className="container lg:w-8/12 md:w-9/12 w-11/12 px-4 pt-8 mx-auto text-center lg:pb-2 md:px-10 lg:px-32 text-gray-900">
+              <h1 className="text-3xl font-bold leading-none text-neutral mx-3">
                 Welcome To Blog
               </h1>
-              <p className="pt-6 pb-4 text-lg mx-auto sm:mb-12 xl:max-w-3xl text-neutral">
+              <p className="pt-6 text-lg mx-auto sm:mb-12 xl:max-w-3xl text-neutral">
                 Web development is a huge part of our society. If you want to be
                 well-known throughout the world then you should probably develop
                 your own website or a web page. We will test your knowledge on

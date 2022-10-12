@@ -4,8 +4,8 @@ import "../css/Navbar.css"
 
 const Navbar = () => {
     return (
-      <div className="bg-slate-200">
-        <div className="navbar container mx-auto text-secondary">
+      <div className="bg-slate-200 mb-20">
+        <div className="navbar bg-slate-200 fixed top-0 text-secondary z-50 md:px-12">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -115,9 +115,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <Link
-              className="px-3 mr-4 py-2 text-lg font-semibold rounded text-base-100 bg-accent text-button hover:bg-primary"
-            >
+            <Link className="px-3 mr-4 py-2 text-lg font-semibold rounded text-base-100 bg-accent text-button hover:bg-primary">
               Test YourSelf
             </Link>
           </div>

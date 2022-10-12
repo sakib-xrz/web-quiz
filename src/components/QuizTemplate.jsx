@@ -16,9 +16,6 @@ const QuizTemplate = ({ allQuestion, index }) => {
     }
   };
 
-  // const markSelectAnswer = (e) =>{
-
-  // }
   return (
     <>
       <div className="lg:w-8/12 md:w-10/12 w-11/12 mx-auto my-8">
@@ -28,7 +25,7 @@ const QuizTemplate = ({ allQuestion, index }) => {
               <div className="flex justify-end mr-5 text-2xl">
                 <label
                   htmlFor="my-modal-3"
-                  className="modal-button cursor-pointer"
+                  className="modal-button cursor-pointer btn-disabled bg-transparent"
                   onClick={() => setModalData(allQuestion)}
                 >
                   <FaEye></FaEye>
@@ -42,11 +39,11 @@ const QuizTemplate = ({ allQuestion, index }) => {
             <div className="grid md:grid-cols-2 grid-cols-1 gap-5 mt-6">
               {options.map((option) => (
                 <label
-                  onChange={handleCorrectAnswer}
                   value={option}
                   className="flex items-center text-left border-2 border-gray-300 rounded-md p-3 cursor-pointer hover:bg-white hover:bg-opacity-50 hover:backdrop-blur-xl hover:border-gray-400"
                 >
                   <input
+                    onChange={handleCorrectAnswer}
                     value={option}
                     type="radio"
                     name="radio-1"

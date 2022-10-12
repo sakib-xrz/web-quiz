@@ -4,7 +4,7 @@ import Banner from "../assets/Business_SVG.svg";
 const Header = () => {
   return (
     <div>
-      <section className="text-gray-800 bg-gray-100">
+      <section className="text-gray-800 bg-base-100">
         <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-around">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <h1 className="lg:text-5xl font-bold leading-tight text-4xl">

@@ -8,13 +8,10 @@ const Home = () => {
   return (
     <div className="container mx-auto">
       <Header></Header>
-      <h2
-        id="all-topic"
-        className="font-semibold lg:text-5xl text-2xl pb-12 pt-5"
-      >
-        Web Development Quiz
-      </h2>
-      <div className="w-10/12 mx-auto">
+      <div id="all-topic" className="w-10/12 mx-auto mt-5">
+        <h2 className="font-semibold lg:text-5xl text-2xl pb-12">
+          Web Development Quiz
+        </h2>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mb-28">
           {topics.map((topic) => (
             <TopicCard key={topic.id} topic={topic}></TopicCard>
